@@ -12,4 +12,4 @@ After creating MyChat app I learned:
 * how to create Segues for navigation
 * how to make custom .xib files to modify native design components
 
-[]!(Image/ChatImage.gif)
+![](Image/ChatImage.gif)
