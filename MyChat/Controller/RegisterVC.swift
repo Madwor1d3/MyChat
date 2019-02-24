@@ -8,8 +8,11 @@
 
 import UIKit
 import Firebase
+import SVProgressHUD
+
 
 class RegisterVC: UIViewController {
+    
     
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -18,14 +21,22 @@ class RegisterVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
     
     
     @IBAction func registerButtonPressed(_ sender: UIButton) {
         
+        SVProgressHUD.show()
+        
+        //Set up a new user on our Firebase database
+        
         Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) {
+            
             (user, error) in
             
             if error != nil {
@@ -36,21 +47,10 @@ class RegisterVC: UIViewController {
                 
                 print("Registration Successful!")
                 
-                self.performSegue(withIdentifier: "goToChatScreen", sender: self)
+                SVProgressHUD.dismiss()
                 
+                self.performSegue(withIdentifier: "goToChatScreen", sender: self)
             }
         }
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

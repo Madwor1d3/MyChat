@@ -33,7 +33,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="registerButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vmt-dU-bGE"/>
                                             <segue destination="QQQ-8T-MF8" kind="show" identifier="goToRegisterScreen" id="1nu-8r-cBD"/>
                                         </connections>
                                     </button>
@@ -45,7 +44,6 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="logInButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xgu-CR-gY4"/>
                                             <segue destination="oS8-tw-PVt" kind="show" identifier="goToLogInScreen" id="6dK-Zx-jAy"/>
                                         </connections>
                                     </button>
@@ -222,6 +220,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="heightConstraint" destination="3Dr-rv-oTB" id="DUe-IL-G5f"/>
                         <outlet property="messageTableView" destination="0u6-DU-jpX" id="Ots-N8-qUd"/>
                         <outlet property="messageTextField" destination="onl-Tw-bNB" id="TRk-ry-1tI"/>
                         <outlet property="sendButton" destination="RFJ-In-a5N" id="iRZ-8m-p5i"/>
@@ -329,6 +328,6 @@
         <image name="WelcomeBG" width="414" height="896"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Awk-LQ-E3h"/>
+        <segue reference="hPQ-zc-E3H"/>
     </inferredMetricsTieBreakers>
 </document>

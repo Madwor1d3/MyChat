@@ -7,21 +7,26 @@
 //
 
 import UIKit
+import Firebase
+
 
 class WelcomeVC: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
-    
-    @IBAction func registerButtonPressed(_ sender: Any) {
-    }
-    
-    
-    @IBAction func logInButtonPressed(_ sender: Any) {
+        
+        if Auth.auth().currentUser != nil {
+            
+            performSegue(withIdentifier: "goToChatScreen", sender: self)
+        }
     }
     
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 }
 

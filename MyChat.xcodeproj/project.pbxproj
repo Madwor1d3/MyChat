@@ -14,6 +14,7 @@
 		0A2F67E52215735300545E8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2F67E32215735300545E8C /* Main.storyboard */; };
 		0A2F67E72215735700545E8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A2F67E62215735700545E8C /* Assets.xcassets */; };
 		0A2F67EA2215735700545E8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A2F67E82215735700545E8C /* LaunchScreen.storyboard */; };
+		0A3DAA822216F19600C26CFE /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3DAA812216F19600C26CFE /* Message.swift */; };
 		0A6461CE22159F0E00EA701D /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6461CD22159F0E00EA701D /* RegisterVC.swift */; };
 		0A6461D022159F1D00EA701D /* LogInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6461CF22159F1D00EA701D /* LogInVC.swift */; };
 		0A6461D222159F2C00EA701D /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6461D122159F2C00EA701D /* ChatVC.swift */; };
@@ -31,6 +32,7 @@
 		0A2F67E62215735700545E8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A2F67E92215735700545E8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A2F67EB2215735700545E8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A3DAA812216F19600C26CFE /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		0A6461CD22159F0E00EA701D /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		0A6461CF22159F1D00EA701D /* LogInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInVC.swift; sourceTree = "<group>"; };
 		0A6461D122159F2C00EA701D /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 		0A052717221579CD00444E04 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0A3DAA812216F19600C26CFE /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -62,8 +65,6 @@
 		0A052718221579D400444E04 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0A2F67E62215735700545E8C /* Assets.xcassets */,
-				0A2F67E32215735300545E8C /* Main.storyboard */,
 				0A250C0E2215EB45005AEBF4 /* Custom Cell */,
 			);
 			path = View;
@@ -124,6 +125,8 @@
 				0A052717221579CD00444E04 /* Model */,
 				0A052718221579D400444E04 /* View */,
 				0A052719221579DF00444E04 /* Controller */,
+				0A2F67E62215735700545E8C /* Assets.xcassets */,
+				0A2F67E32215735300545E8C /* Main.storyboard */,
 				0A05271A221579ED00444E04 /* Supporting Files */,
 			);
 			path = MyChat;
@@ -284,6 +287,7 @@
 				0A6461D022159F1D00EA701D /* LogInVC.swift in Sources */,
 				0A2F67E02215735300545E8C /* AppDelegate.swift in Sources */,
 				0A6461D222159F2C00EA701D /* ChatVC.swift in Sources */,
+				0A3DAA822216F19600C26CFE /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
